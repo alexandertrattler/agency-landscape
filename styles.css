@@ -1524,9 +1524,9 @@ body {
   }
 
   .filters .chip:not(:last-child)::after {
-    content: "/";
-    margin-left: 10px;
-    color: rgba(255, 255, 255, 0.34);
+    content: "•";
+    margin-left: 9px;
+    color: rgba(255, 255, 255, 0.36);
     text-decoration: none;
     text-shadow: none;
   }

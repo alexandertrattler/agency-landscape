@@ -211,7 +211,7 @@ const setMobileFiltersOpen = (isOpen) => {
   document.body.classList.toggle("filters-open", open);
   els.openFilters.setAttribute("aria-expanded", String(open));
   els.peekFilters.setAttribute("aria-expanded", String(open));
-  els.peekFilters.textContent = open ? "Close" : "Open";
+  els.peekFilters.textContent = open ? "Close Filter" : "Open Filter";
   els.filterScrim.hidden = !open;
 };
 
@@ -392,17 +392,6 @@ const toggleShortlist = (id) => {
 const toggleInfo = (id) => {
   state.expandedAgencyId = state.expandedAgencyId === id ? null : id;
   update();
-  if (!state.expandedAgencyId) return;
-  requestAnimationFrame(() => {
-    const expandedCard = document.querySelector(`[data-agency-id="${state.expandedAgencyId}"]`);
-    if (!expandedCard) return;
-    const searchTop = Math.max(0, Math.round(els.searchInput.getBoundingClientRect().top));
-    expandedCard.style.scrollMarginTop = `${searchTop}px`;
-    expandedCard.scrollIntoView({
-      block: "start",
-      behavior: "smooth"
-    });
-  });
 };
 
 const cardTemplate = (agency) => `
