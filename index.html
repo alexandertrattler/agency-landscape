@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>internschiffer</title>
-    <link rel="stylesheet" href="styles.css?v=ethics-filter-1">
+    <link rel="stylesheet" href="styles.css?v=mobile-drawer-1">
   </head>
   <body>
     <header class="meta-console" aria-label="Kennzahlen">
@@ -16,8 +16,15 @@
       </div>
     </header>
 
+    <button id="filterScrim" class="filter-scrim" type="button" aria-label="Filter schließen" hidden></button>
+
     <main class="app-shell">
       <aside class="filters" aria-label="Filter">
+        <div class="mobile-filter-head">
+          <strong>Filter</strong>
+          <button id="closeFilters" class="sort-option" type="button">Schließen</button>
+        </div>
+
         <label class="search">
           <span class="filter-heading">Suche</span>
           <input id="searchInput" type="search" placeholder="Firma, Ort, Domain, Profil, Tags">
@@ -51,6 +58,7 @@
             <input id="uploadDataInput" type="file" accept=".json,.xlsx,application/json,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" hidden>
           </div>
           <span id="uploadDataStatus" class="upload-status" aria-live="polite"></span>
+          <button id="openFilters" class="sort-option mobile-filter-toggle" type="button" aria-expanded="false">Filter</button>
           <button id="shortlistFilter" class="chip shortlist-filter" type="button">
             <span>Nur Shortlist</span><span id="shortlistFilterCount" class="chip-count">0</span>
           </button>
@@ -61,7 +69,7 @@
       </section>
     </main>
 
-    <script src="data.js?v=ethics-filter-1"></script>
-    <script src="app.js?v=ethics-filter-1"></script>
+    <script src="data.js?v=mobile-drawer-1"></script>
+    <script src="app.js?v=mobile-drawer-1"></script>
   </body>
 </html>
