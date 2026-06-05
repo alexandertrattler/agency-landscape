@@ -10,6 +10,38 @@ const capabilityDefs = [
   ["Art/Culture", ["kunst", "kultur", "festival", "museum", "media art", "medienkunst", "public art"]]
 ];
 
+const ethicsKeywords = [
+  "ethik",
+  "gender",
+  "gerechtigkeit",
+  "gendergerechtigkeit",
+  "feminismus",
+  "feministisch",
+  "flinta",
+  "divers",
+  "diversität",
+  "diversitaet",
+  "inklusion",
+  "inklusiv",
+  "diskriminierung",
+  "diskriminierungssensibel",
+  "nachhaltigkeit",
+  "sustainability",
+  "soziales",
+  "sozial",
+  "partizipation",
+  "teilhabe",
+  "gemeinnützig",
+  "gemeinnuetzig",
+  "non-profit",
+  "community",
+  "awareness"
+];
+
+const ethicsPhrases = [
+  "freie szene"
+];
+
 const cityDefs = [
   ["berlin", "Berlin", ["berlin"]],
   ["hamburg", "Hamburg", ["hamburg", "hamburg/deutschland"]],
@@ -118,6 +150,7 @@ const state = {
   cityFilters: new Set(),
   sortMode: "name",
   expandedAgencyId: null,
+  ethicsOnly: false,
   shortlistOnly: false,
   shortlist: new Set(JSON.parse(localStorage.getItem("agencyShortlist") || "[]"))
 };
@@ -133,6 +166,7 @@ const els = {
   uploadDataButton: document.querySelector("#uploadDataButton"),
   uploadDataInput: document.querySelector("#uploadDataInput"),
   uploadDataStatus: document.querySelector("#uploadDataStatus"),
+  ethicsFilter: document.querySelector("#ethicsFilter"),
   sortOptions: document.querySelectorAll("[data-sort]"),
   filterResizeHandle: document.querySelector("#filterResizeHandle"),
   resetFilters: document.querySelector("#resetFilters"),
@@ -240,6 +274,13 @@ const matchesCountryFilters = (agency) => state.countryFilters.size === 0 ||
 const matchesCityFilters = (agency) => state.cityFilters.size === 0 ||
   agency.cityKeys.some((key) => state.cityFilters.has(key));
 
+const matchesEthicsFilter = (agency) => {
+  if (!state.ethicsOnly) return true;
+  const text = searchableText(agency);
+  return ethicsKeywords.some((keyword) => text.includes(normalize(keyword))) ||
+    ethicsPhrases.some((phrase) => text.includes(normalize(phrase)));
+};
+
 const matchesShortlistFilter = (agency) => !state.shortlistOnly || state.shortlist.has(agency.id);
 
 const candidatesForCounts = (skip) => {
@@ -249,6 +290,7 @@ const candidatesForCounts = (skip) => {
     if (skip !== "capability" && !matchesCapabilityFilters(agency)) return false;
     if (skip !== "country" && !matchesCountryFilters(agency)) return false;
     if (skip !== "city" && !matchesCityFilters(agency)) return false;
+    if (!matchesEthicsFilter(agency)) return false;
     if (!matchesShortlistFilter(agency)) return false;
     return true;
   });
@@ -290,6 +332,7 @@ const renderFilters = () => {
   )));
 
   els.shortlistFilter.classList.toggle("active", state.shortlistOnly);
+  els.ethicsFilter.classList.toggle("active", state.ethicsOnly);
   els.shortlistFilterCount.textContent = state.shortlist.size;
 };
 
@@ -318,6 +361,7 @@ const filterAgencies = () => {
       matchesCapabilityFilters(agency) &&
       matchesCountryFilters(agency) &&
       matchesCityFilters(agency) &&
+      matchesEthicsFilter(agency) &&
       matchesShortlistFilter(agency);
   });
   sortAgencies();
@@ -560,6 +604,7 @@ const init = async () => {
     state.capabilityFilters.clear();
     state.countryFilters.clear();
     state.cityFilters.clear();
+    state.ethicsOnly = false;
     state.shortlistOnly = false;
     state.shortlist.clear();
     els.searchInput.value = "";
@@ -568,6 +613,10 @@ const init = async () => {
   });
   els.uploadDataButton.addEventListener("click", () => els.uploadDataInput.click());
   els.uploadDataInput.addEventListener("change", (event) => uploadAgencyFile(event.target.files?.[0]));
+  els.ethicsFilter.addEventListener("click", () => {
+    state.ethicsOnly = !state.ethicsOnly;
+    update();
+  });
   els.shortlistFilter.addEventListener("click", toggleShortlistFilter);
   els.cardsGrid.addEventListener("click", (event) => {
     const shortlistButton = event.target.closest("[data-shortlist]");
