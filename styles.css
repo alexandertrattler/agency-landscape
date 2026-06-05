@@ -1525,8 +1525,12 @@ body {
 
   .filters .chip:not(:last-child)::after {
     content: "•";
-    margin-left: 9px;
-    color: rgba(255, 255, 255, 0.36);
+    display: inline-block;
+    margin-left: 10px;
+    color: #686674;
+    font-size: 12px;
+    line-height: 1;
+    vertical-align: 0.05em;
     text-decoration: none;
     text-shadow: none;
   }
