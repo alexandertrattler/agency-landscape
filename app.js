@@ -138,7 +138,9 @@ const els = {
   uploadDataInput: document.querySelector("#uploadDataInput"),
   uploadDataStatus: document.querySelector("#uploadDataStatus"),
   ethicsFilter: document.querySelector("#ethicsFilter"),
+  mobileEthicsFilter: document.querySelector("#mobileEthicsFilter"),
   openFilters: document.querySelector("#openFilters"),
+  peekFilters: document.querySelector("#peekFilters"),
   closeFilters: document.querySelector("#closeFilters"),
   filterScrim: document.querySelector("#filterScrim"),
   sortOptions: document.querySelectorAll("[data-sort]"),
@@ -311,6 +313,7 @@ const renderFilters = () => {
 
   els.shortlistFilter.classList.toggle("active", state.shortlistOnly);
   els.ethicsFilter.classList.toggle("active", state.ethicsOnly);
+  els.mobileEthicsFilter.classList.toggle("active", state.ethicsOnly);
   els.shortlistFilterCount.textContent = state.shortlist.size;
 };
 
@@ -593,6 +596,7 @@ const init = async () => {
   els.uploadDataButton.addEventListener("click", () => els.uploadDataInput.click());
   els.uploadDataInput.addEventListener("change", (event) => uploadAgencyFile(event.target.files?.[0]));
   els.openFilters.addEventListener("click", () => setMobileFiltersOpen(true));
+  els.peekFilters.addEventListener("click", () => setMobileFiltersOpen(true));
   els.closeFilters.addEventListener("click", () => setMobileFiltersOpen(false));
   els.filterScrim.addEventListener("click", () => setMobileFiltersOpen(false));
   window.addEventListener("keydown", (event) => {
@@ -602,6 +606,10 @@ const init = async () => {
     if (event.matches) setMobileFiltersOpen(false);
   });
   els.ethicsFilter.addEventListener("click", () => {
+    state.ethicsOnly = !state.ethicsOnly;
+    update();
+  });
+  els.mobileEthicsFilter.addEventListener("click", () => {
     state.ethicsOnly = !state.ethicsOnly;
     update();
   });

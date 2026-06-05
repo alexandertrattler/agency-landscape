@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>internschiffer</title>
-    <link rel="stylesheet" href="styles.css?v=mobile-drawer-2">
+    <link rel="stylesheet" href="styles.css?v=mobile-drawer-4">
   </head>
   <body>
     <header class="meta-console" aria-label="Kennzahlen">
@@ -21,7 +21,7 @@
     <main class="app-shell">
       <aside class="filters" aria-label="Filter">
         <div class="mobile-filter-head">
-          <strong>Filter</strong>
+          <button id="peekFilters" class="mobile-filter-title" type="button">Filter</button>
           <button id="closeFilters" class="sort-option" type="button">Schließen</button>
         </div>
 
@@ -29,6 +29,11 @@
           <span class="filter-heading">Suche</span>
           <input id="searchInput" type="search" placeholder="Firma, Ort, Domain, Profil, Tags">
         </label>
+
+        <section class="mobile-category-filter">
+          <h2>Kategorie</h2>
+          <button id="mobileEthicsFilter" class="drawer-text-filter" type="button">Ethik/Gendergerechtigkeit</button>
+        </section>
 
         <section>
           <h2>Themen</h2>
@@ -49,6 +54,7 @@
 
       <section class="workspace">
         <div class="cards-toolbar">
+          <button id="openFilters" class="sort-option mobile-filter-toggle" type="button" aria-expanded="false">Filter</button>
           <div class="sort-control" aria-label="Sortierung">
             <button id="resetFilters" class="sort-option reset-option" type="button">Reset</button>
             <button class="sort-option active" type="button" data-sort="name">A-Z</button>
@@ -58,7 +64,6 @@
             <input id="uploadDataInput" type="file" accept=".json,.xlsx,application/json,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" hidden>
           </div>
           <span id="uploadDataStatus" class="upload-status" aria-live="polite"></span>
-          <button id="openFilters" class="sort-option mobile-filter-toggle" type="button" aria-expanded="false">Filter</button>
           <button id="shortlistFilter" class="chip shortlist-filter" type="button">
             <span>Nur Shortlist</span><span id="shortlistFilterCount" class="chip-count">0</span>
           </button>
@@ -69,7 +74,7 @@
       </section>
     </main>
 
-    <script src="data.js?v=mobile-drawer-2"></script>
-    <script src="app.js?v=mobile-drawer-2"></script>
+    <script src="data.js?v=mobile-drawer-4"></script>
+    <script src="app.js?v=mobile-drawer-4"></script>
   </body>
 </html>
