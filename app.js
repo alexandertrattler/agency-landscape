@@ -231,6 +231,18 @@ const makeChip = (label, count, active, onClick) => {
   return el;
 };
 
+const makeFilterSeparator = () => {
+  const separator = document.createElement("span");
+  separator.className = "filter-separator";
+  separator.setAttribute("aria-hidden", "true");
+  separator.textContent = "•";
+  return separator;
+};
+
+const withFilterSeparators = (chips) => chips.flatMap((chip, index) => (
+  index === chips.length - 1 ? [chip] : [chip, makeFilterSeparator()]
+));
+
 const countBy = (items, getKeys) => {
   const counts = new Map();
   items.forEach((item) => {
@@ -283,35 +295,35 @@ const renderFilters = () => {
   const capabilityChips = capabilityDefs
     .map(([name]) => ({ label: name, count: capabilityCounts.get(name) || 0 }))
     .sort(alphaSort);
-  els.capabilityFilters.replaceChildren(...capabilityChips.map((capability) => makeChip(
+  els.capabilityFilters.replaceChildren(...withFilterSeparators(capabilityChips.map((capability) => makeChip(
     capability.label,
     capability.count,
     state.capabilityFilters.has(capability.label),
     () => toggleSet(state.capabilityFilters, capability.label)
-  )));
+  ))));
 
   const countryCounts = countBy(candidatesForCounts("country"), (agency) => agency.countryKeys);
   const countryChips = countryDefs
     .map((country) => ({ ...country, count: countryCounts.get(country.key) || 0 }))
     .filter((country) => country.count > 0 || state.countryFilters.has(country.key))
     .sort(alphaSort);
-  els.countryFilters.replaceChildren(...countryChips.map((country) => makeChip(
+  els.countryFilters.replaceChildren(...withFilterSeparators(countryChips.map((country) => makeChip(
     country.label,
     country.count,
     state.countryFilters.has(country.key),
     () => toggleSet(state.countryFilters, country.key)
-  )));
+  ))));
 
   const cityCounts = countBy(candidatesForCounts("city"), (agency) => agency.cityKeys);
   const cityChips = [...cityCounts.entries()]
     .map(([key, count]) => ({ key, count, label: cityByKey(key).label }))
     .sort(alphaSort);
-  els.cityFilters.replaceChildren(...cityChips.map((city) => makeChip(
+  els.cityFilters.replaceChildren(...withFilterSeparators(cityChips.map((city) => makeChip(
     city.label,
     city.count,
     state.cityFilters.has(city.key),
     () => toggleSet(state.cityFilters, city.key)
-  )));
+  ))));
 
   els.shortlistFilter.classList.toggle("active", state.shortlistOnly);
   els.ethicsFilter.classList.toggle("active", state.ethicsOnly);

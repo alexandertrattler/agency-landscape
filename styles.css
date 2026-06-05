@@ -226,6 +226,10 @@ body.resizing .resize-handle {
   gap: 5px;
 }
 
+.filter-separator {
+  display: none;
+}
+
 .chip,
 .view-tabs button,
 .ghost-button,
@@ -1524,15 +1528,19 @@ body {
   }
 
   .filters .chip:not(:last-child)::after {
-    content: "•";
-    display: inline-block;
-    margin-left: 10px;
-    color: #686674;
-    font-size: 12px;
-    line-height: 1;
-    vertical-align: 0.05em;
-    text-decoration: none;
-    text-shadow: none;
+    content: none;
+  }
+
+  .filters .filter-separator {
+    display: inline-flex;
+    align-items: center;
+    margin: 4px 1px;
+    color: #5d5a66;
+    font-size: 14px;
+    font-weight: 850;
+    line-height: 1.35;
+    pointer-events: none;
+    user-select: none;
   }
 
   .filters .chip-count {
