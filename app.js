@@ -52,6 +52,7 @@ const cityDefs = [
   ["mailand", "Mailand", ["mailand", "milan", "milano"]],
   ["toronto", "Toronto", ["toronto"]],
   ["saopaulo", "São Paulo", ["sao paulo", "são paulo"]],
+  ["tokyo", "Tokio", ["tokio", "tokyo"]],
   ["losangeles", "Los Angeles", ["los angeles"]],
   ["newyork", "New York", ["new york", "brooklyn"]],
   ["sydney", "Sydney", ["sydney", "paddington"]],
@@ -78,6 +79,7 @@ const countryDefs = [
   ["ca", "Kanada"],
   ["br", "Brasilien"],
   ["au", "Australien"],
+  ["jp", "Japan"],
   ["cn", "China"],
   ["global", "Global/Remote"],
   ["unknown", "Unklar"]
@@ -93,6 +95,7 @@ const cityCountry = {
   linz: "at", wien: "at", basel: "ch", genf: "ch",
   amsterdam: "nl", denhaag: "nl", enschede: "nl", kopenhagen: "dk", barcelona: "es", london: "uk", glasgow: "uk",
   lyon: "fr", mailand: "it", toronto: "ca", saopaulo: "br",
+  tokyo: "jp",
   losangeles: "us", newyork: "us", santafe: "us", lasvegas: "us", denver: "us",
   grapevine: "us", houston: "us", sydney: "au",
   global: "global", unknown: "unknown"

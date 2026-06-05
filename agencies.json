@@ -1178,5 +1178,25 @@
     "profile": "Hall of Bricks ist eine kleine Manufaktur und ein Shop für Custom-Bricks, Custom-Figuren und bedruckte Baustein-Teile. Der Eintrag ist eher Produktdesign/Manufaktur als Agentur, wurde aber als realer Praktikumsgeber verifiziert.",
     "confidence": "medium",
     "sourceUrl": "https://hallofbricks.shop/pages/faqs-kontakt"
+  },
+  {
+    "id": 119,
+    "name": "1→10, Inc.",
+    "providedUrl": "https://www.1-10.com",
+    "domain": "1-10.com",
+    "location": "Tokio, Japan",
+    "profile": "1→10 ist eine japanische Creative Company, die digitale Technologie, Experience Design und immersive Installationen verbindet. Die Arbeiten reichen von interaktiven Land-Art-Projekten und Projection Mapping bis zu Marken- und Kulturformaten.",
+    "confidence": "high",
+    "sourceUrl": "https://www.1-10.com/en/"
+  },
+  {
+    "id": 120,
+    "name": "JKD Collective Inc.",
+    "providedUrl": "https://jkdcollective.jp/en",
+    "domain": "jkdcollective.jp",
+    "location": "Tokio, Japan",
+    "profile": "JKD Collective ist ein Creative Studio in Tokio für innovative Video-, Musik- und Experience-Produktionen. Das Studio produziert u. a. Branded Film, Animation, CG, Commercials, Dokumentarfilm, Projection Mapping sowie AR/VR- und Multimedia-Installationen.",
+    "confidence": "high",
+    "sourceUrl": "https://jkdcollective.jp/en/about/"
   }
 ]
