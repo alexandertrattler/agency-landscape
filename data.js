@@ -988,5 +988,195 @@ window.AGENCIES = [
     "profile": "Graphic Group ist eine Bielefelder Agentur für visuellen Content, Packaging, Large Format Printing, CGI, Fotografie, Postproduktion und Animation. Das Unternehmen wurde 1925 gegründet und positioniert sich als Anbieter hochwertiger Bild- und Verpackungslösungen.",
     "confidence": "high",
     "sourceUrl": "https://graphic-group.de/impressum/"
+  },
+  {
+    "id": 100,
+    "name": "TNL / The Night Lab",
+    "providedUrl": "https://www.tnl.de/de/profil/team",
+    "domain": "tnl.de",
+    "location": "Bielefeld, Deutschland",
+    "profile": "TNL / The Night Lab ist ein Kreativ-Labor für Design und Illumination mit Fokus auf mediale Inszenierungen. Das Team arbeitet u. a. in Grafik- und 3D-Motion-Design, Multimedia, AR/VR, Filmproduktion, Lichtdesign, Storytelling, Technik und Entwicklung.",
+    "confidence": "high",
+    "sourceUrl": "https://www.tnl.de/ueber-uns/team/"
+  },
+  {
+    "id": 101,
+    "name": "Neo Motion Studio",
+    "providedUrl": "http://neomotion.studio",
+    "domain": "neomotion.studio",
+    "location": "Berlin, Deutschland",
+    "profile": "Neo Motion Studio ist ein Berliner Studio für 3D-Film, 3D-Produktvisualisierung und erklärende Bewegtbildformate. Die Website zeigt Projekte zwischen CGI, Motion und markennaher Produktkommunikation.",
+    "confidence": "high",
+    "sourceUrl": "https://www.neomotion.studio/en/home/"
+  },
+  {
+    "id": 102,
+    "name": "Fabian&Fred",
+    "providedUrl": "https://www.fabianfred.com/",
+    "domain": "fabianfred.com",
+    "location": "Hamburg, Deutschland",
+    "profile": "Fabian&Fred ist ein Studio für Film und Animation in Hamburg. Das Studio entwickelt und produziert Animationsfilme, dokumentarische Formate, VR-Arbeiten und Auftragsproduktionen.",
+    "confidence": "high",
+    "sourceUrl": "https://www.fabianfred.com/"
+  },
+  {
+    "id": 103,
+    "name": "Frieda-Werkstattladen",
+    "providedUrl": "www.frieda-werkstattladen.de",
+    "domain": "frieda-werkstattladen.de",
+    "location": "Bielefeld, Deutschland",
+    "profile": "Frieda-Werkstattladen ist ein Grafikbüro und eine Siebdruckwerkstatt in Bielefeld. Das Angebot umfasst Logo- und Printgestaltung, individuelle Karten, Siebdruckprodukte und Workshops.",
+    "confidence": "high",
+    "sourceUrl": "https://www.frieda-werkstattladen.de/kontakt/"
+  },
+  {
+    "id": 104,
+    "name": "Tiny Giants",
+    "providedUrl": "www.tinygiants.nl",
+    "domain": "tinygiants.nl",
+    "location": "Enschede, Niederlande",
+    "profile": "Tiny Giants ist ein niederländisches Full-Service-Team für visuelle Inhalte, Motion, 3D, VFX, Film und Social-Media-Content. Das Studio arbeitet für Kultur-, Business- und Entertainment-Kunden und sitzt laut eigener Datenschutzerklärung in Enschede.",
+    "confidence": "high",
+    "sourceUrl": "https://www.tinygiants.nl/studio"
+  },
+  {
+    "id": 105,
+    "name": "LAB BINÆR",
+    "providedUrl": "https://labbinaer.de/",
+    "domain": "labbinaer.de",
+    "location": "Augsburg, Deutschland",
+    "profile": "LAB BINÆR ist ein Augsburger Lab für Medienkunst an der Schnittstelle von Mensch und Technologie, Kunst und Design. Die Arbeiten reichen von Installationen und Games bis zu AI-Visuals, Workshops und experimentellen Medienprojekten.",
+    "confidence": "high",
+    "sourceUrl": "https://labbinaer.de/"
+  },
+  {
+    "id": 106,
+    "name": "Studio Louter",
+    "providedUrl": "https://www.studiolouter.nl/",
+    "domain": "studiolouter.nl",
+    "location": "Amsterdam, Niederlande",
+    "profile": "Studio Louter ist ein Content-Design-Studio für Museen in Amsterdam. Das Studio entwickelt emotionale Storytelling- und Visitor-Experience-Konzepte für internationale Museumsprojekte.",
+    "confidence": "high",
+    "sourceUrl": "https://www.studiolouter.nl/"
+  },
+  {
+    "id": 107,
+    "name": "NewFormat",
+    "providedUrl": "http://newformat.io",
+    "domain": "newformat.io",
+    "location": "Berlin, Deutschland; Mailand, Italien",
+    "profile": "NewFormat ist ein Creative Studio mit Sitz in Berlin und Mailand. Das Studio arbeitet an der Schnittstelle von Creative Direction, Art Direction, CGI, AI und digitaler Kunst für Mode-, Kultur- und Markenprojekte.",
+    "confidence": "high",
+    "sourceUrl": "https://newformat.io/about"
+  },
+  {
+    "id": 108,
+    "name": "The Hidden Institute",
+    "providedUrl": "https://www.thehiddeninstitute.com",
+    "domain": "thehiddeninstitute.com",
+    "location": "Leipzig, Deutschland",
+    "profile": "The Hidden Institute ist ein junges Animationsstudio aus Leipzig. Im Zentrum stehen Monja Dietrich und Vincent Suttner, die hochwertige animierte Filme, Musikvideos und Werbeformate entwickeln.",
+    "confidence": "high",
+    "sourceUrl": "https://www.thehiddeninstitute.com/about"
+  },
+  {
+    "id": 109,
+    "name": "2RAW GmbH",
+    "providedUrl": "https://www.2raw.de/",
+    "domain": "2raw.de",
+    "location": "Mannheim, Deutschland",
+    "profile": "2RAW ist ein Creative Production House für Film, CGI und Social Campaigns. Das Unternehmen arbeitet mit einem Netzwerk kreativer Freelancer und übernimmt Konzeption, Projektmanagement und Produktion für Markenauftritte.",
+    "confidence": "high",
+    "sourceUrl": "https://2raw.de/en/about"
+  },
+  {
+    "id": 110,
+    "name": "HighPassionStudios",
+    "providedUrl": "highpassionstudios.com",
+    "domain": "highpassionstudios.com",
+    "location": "Mainleus, Deutschland",
+    "profile": "HighPassionStudios ist ein deutsches Indie-Game-Studio rund um das Unreal-Engine-5-Projekt Dwellink: War of the Nine. Laut Website entstand das Studio 2022 aus Bernhardt & Fraunholz Mediendesign und arbeitet an Games sowie Software-Anwendungen.",
+    "confidence": "high",
+    "sourceUrl": "https://highpassionstudios.com/"
+  },
+  {
+    "id": 111,
+    "name": "networker Medienfabrik GmbH",
+    "providedUrl": "networker Medienfabrik GmbH, Bielefeld",
+    "domain": "networker.de",
+    "location": "Bielefeld, Deutschland",
+    "profile": "networker Medienfabrik ist eine Bielefelder Agentur für Internet, Print und Marketing. Das Leistungsspektrum umfasst Weblösungen, CMS, Corporate Design, Geschäftsausstattung, Informationsmaterialien und Texte.",
+    "confidence": "high",
+    "sourceUrl": "https://www.bielefeld.de/node/4568"
+  },
+  {
+    "id": 112,
+    "name": "Kanal 21",
+    "providedUrl": "https://www.kanal-21.de/",
+    "domain": "kanal-21.de",
+    "location": "Bielefeld, Deutschland",
+    "profile": "Kanal 21 ist ein Bielefelder Medienprojektzentrum mit Angeboten rund um Partizipation, Medienkompetenz, Praktika und Ausbildung. Die gemeinnützige GmbH bietet außerdem Videoproduktion, Livestreaming, Animation/Compositing und Eventaufzeichnungen an.",
+    "confidence": "high",
+    "sourceUrl": "https://www.kanal-21.de/"
+  },
+  {
+    "id": 113,
+    "name": "TwoPoints.Net",
+    "providedUrl": "twopoints.net",
+    "domain": "twopoints.net",
+    "location": "Hamburg, Berlin, Deutschland; Barcelona, Spanien",
+    "profile": "TwoPoints.Net ist ein Designstudio für flexible visuelle Identitäten für Unternehmen, Institutionen, Organisationen, Events, Produkte und Publikationen. Das Studio wurde 2007 gegründet und arbeitet von Hamburg, Berlin und Barcelona aus.",
+    "confidence": "high",
+    "sourceUrl": "https://new.twopoints.net/info/"
+  },
+  {
+    "id": 114,
+    "name": "Atelier Heiner Meyer",
+    "providedUrl": "http://heiner-meyer.com",
+    "domain": "heiner-meyer.com",
+    "location": "Bielefeld, Deutschland",
+    "profile": "Atelier Heiner Meyer ist die Website des Bielefelder Pop-Art-Künstlers Heiner Meyer. Meyer arbeitet mit Malerei, Skulptur, Popkultur- und Werbeästhetik; der Eintrag ist daher eher Kunst-/Atelierkontext als klassische Agentur.",
+    "confidence": "medium",
+    "sourceUrl": "https://heiner-meyer.com/"
+  },
+  {
+    "id": 115,
+    "name": "Trauergestalt",
+    "providedUrl": "https://trauergestalt.de/",
+    "domain": "trauergestalt.de",
+    "location": "Bielefeld, Deutschland",
+    "profile": "Trauergestalt entwickelt gestalterische Produkte und Angebote für Trauerkultur, darunter individuelle Trauerkarten, Gedenkstücke und Begleitung für Trauerfeiern. Das Projekt verbindet Kommunikationsdesign, sensiblen Service und soziale Gestaltung.",
+    "confidence": "high",
+    "sourceUrl": "https://trauergestalt.de/"
+  },
+  {
+    "id": 116,
+    "name": "Rewire",
+    "providedUrl": "https://www.rewirefestival.nl/",
+    "domain": "rewirefestival.nl",
+    "location": "Den Haag, Niederlande",
+    "profile": "Rewire ist eine gemeinnützige Organisation und ein jährliches internationales Festival für abenteuerliche Musik in Den Haag. Neben dem Festival organisiert Rewire ganzjährig Konzerte, Bildungsprogramme und soundbezogene Kulturformate.",
+    "confidence": "high",
+    "sourceUrl": "https://www.rewirefestival.nl/about_contact"
+  },
+  {
+    "id": 117,
+    "name": "Cheers for Fears",
+    "providedUrl": "https://cheersforfears.de/",
+    "domain": "cheersforfears.de",
+    "location": "Mülheim an der Ruhr, Deutschland",
+    "profile": "Cheers for Fears ist eine Plattform und Initiative für die junge freie Szene der darstellenden Künste in NRW. Die Website zeigt Open Calls, Festivals, Akademien und Produktionsplattformen statt klassischer Agenturleistungen.",
+    "confidence": "medium",
+    "sourceUrl": "https://cheersforfears.de/kategorie/open-calls/"
+  },
+  {
+    "id": 118,
+    "name": "Hall of Bricks",
+    "providedUrl": "https://hallofbricks.shop/",
+    "domain": "hallofbricks.shop",
+    "location": "Bünde, Deutschland",
+    "profile": "Hall of Bricks ist eine kleine Manufaktur und ein Shop für Custom-Bricks, Custom-Figuren und bedruckte Baustein-Teile. Der Eintrag ist eher Produktdesign/Manufaktur als Agentur, wurde aber als realer Praktikumsgeber verifiziert.",
+    "confidence": "medium",
+    "sourceUrl": "https://hallofbricks.shop/pages/faqs-kontakt"
   }
 ];
