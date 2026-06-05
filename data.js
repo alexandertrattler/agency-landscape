@@ -1198,5 +1198,115 @@ window.AGENCIES = [
     "profile": "JKD Collective ist ein Creative Studio in Tokio für innovative Video-, Musik- und Experience-Produktionen. Das Studio produziert u. a. Branded Film, Animation, CG, Commercials, Dokumentarfilm, Projection Mapping sowie AR/VR- und Multimedia-Installationen.",
     "confidence": "high",
     "sourceUrl": "https://jkdcollective.jp/en/about/"
+  },
+  {
+    "id": 121,
+    "name": "studiokwi",
+    "providedUrl": "studiokwi.de/about",
+    "domain": "studiokwi.de",
+    "location": "Berlin, Deutschland",
+    "profile": "studiokwi ist ein Berliner Designstudio für intersektionales, diskriminierungssensibles und barrierebewusstes Design. Das Studio arbeitet mit diversen Kund*innen und einem Netzwerk an visuellen Identitäten, Webdesign, Editorial, Print, Workshops und gendersensibler Kommunikation.",
+    "confidence": "high",
+    "sourceUrl": "https://studiokwi.de/about/"
+  },
+  {
+    "id": 122,
+    "name": "Helder",
+    "providedUrl": "helder.design/marken/emanzipation-als-brand-purpose",
+    "domain": "helder.design",
+    "location": "Berlin, Deutschland",
+    "profile": "Helder ist eine Berliner Branding-Agentur für Markenstrategie, Brand Design und Storytelling. Im Ethik/Gendergerechtigkeit-Kontext ist Helder relevant, weil die Agentur Brand Purpose, Werte, Community Brands und Diversität als strategische Markenthemen sichtbar macht.",
+    "confidence": "high",
+    "sourceUrl": "https://helder.design/marken/emanzipation-als-brand-purpose"
+  },
+  {
+    "id": 123,
+    "name": "Studio Pandan",
+    "providedUrl": "pandan.co/de/info",
+    "domain": "pandan.co",
+    "location": "Berlin, Deutschland",
+    "profile": "Studio Pandan ist ein Berliner Designstudio für visuelle Identitäten, Publikationen, Websites und kulturelle Projekte. Das von Ann Richter und Pia Christmann gegründete Studio arbeitet stark typografisch, kulturbezogen und wird im Doc als weiblich geführtes Team im Ethik/Gendergerechtigkeit-Kontext geführt.",
+    "confidence": "high",
+    "sourceUrl": "https://pandan.co/en/info/"
+  },
+  {
+    "id": 124,
+    "name": "Missy Magazine",
+    "providedUrl": "missy-magazine.de/ueber-missy",
+    "domain": "missy-magazine.de",
+    "location": "Berlin, Deutschland",
+    "profile": "Missy Magazine ist ein unabhängiges feministisches Magazin für Pop, Politik und intersektionalen Feminismus. Das Missyverse umfasst Print, Online, Podcast, Social-Formate, Newsletter und einen feministischen Kalender mit Fokus auf FLINTA- und BIPoC-Perspektiven.",
+    "confidence": "high",
+    "sourceUrl": "https://missy-magazine.de/ueber-missy/"
+  },
+  {
+    "id": 125,
+    "name": "NEW STANDARD.S",
+    "providedUrl": "newstandard.studio/nachhaltigkeit-agentur-berlin",
+    "domain": "newstandard.studio",
+    "location": "Berlin, Deutschland",
+    "profile": "NEW STANDARD.S ist eine Berliner Nachhaltigkeitsberatung und ein Creative Studio für Circular Economy. Das Studio verbindet Strategie, Umsetzung und Kommunikation, um Nachhaltigkeit, Circularity und glaubwürdige Kampagnen ohne Greenwashing zu entwickeln.",
+    "confidence": "high",
+    "sourceUrl": "https://newstandard.studio/"
+  },
+  {
+    "id": 126,
+    "name": "Modem Studio",
+    "providedUrl": "modem.studio",
+    "domain": "modem.studio",
+    "location": "Berlin, Deutschland",
+    "profile": "Modem Studio ist ein Berliner Grafikdesign-Studio für kulturelle und kommerzielle Institutionen sowie private Kund*innen. Im Doc wird es im Ethik/Gendergerechtigkeit-Kontext geführt, unter anderem wegen Bezügen zu District Berlin und kulturbezogener Gestaltung.",
+    "confidence": "medium",
+    "sourceUrl": "https://www.modem.studio/about/"
+  },
+  {
+    "id": 127,
+    "name": "IN-VISIBLE Berlin",
+    "providedUrl": "in-visible.berlin/leistungen",
+    "domain": "in-visible.berlin",
+    "location": "Berlin, Deutschland",
+    "profile": "IN-VISIBLE Berlin ist eine Agentur für Gender, Diversity und Transformation. Das Team entwickelt menschenzentrierte Diversity-Strategien, Beratung und Workshops zu Gendergerechtigkeit, Bias, Inklusion und DEI-Prozessen.",
+    "confidence": "high",
+    "sourceUrl": "https://www.in-visible.berlin/"
+  },
+  {
+    "id": 128,
+    "name": "Rimini Berlin",
+    "providedUrl": "rimini-berlin.de/de",
+    "domain": "rimini-berlin.de",
+    "location": "Berlin, Deutschland",
+    "profile": "Rimini Berlin ist ein Designstudio für gedruckte, digitale, filmische und räumliche Projekte im Kultur- und Wissenschaftsbereich. Im Doc wird Rimini im Ethik/Gendergerechtigkeit-Kontext geführt; das Studio arbeitet konzeptuell und experimentell mit Institutionen, Künstler*innen, Verlagen und Museen.",
+    "confidence": "high",
+    "sourceUrl": "https://www.rimini-berlin.de/en/about"
+  },
+  {
+    "id": 129,
+    "name": "THE DISTRIQT",
+    "providedUrl": "thedistriqt.com/about",
+    "domain": "thedistriqt.com",
+    "location": "Hamburg, Deutschland",
+    "profile": "THE DISTRIQT ist ein feministisches Publishing House und eine Creative Agency für Edutainment, Content, Events und Produkte. Das Team fragt explizit nach nachhaltigeren, inklusiveren, diverseren und gerechteren Formen von Kommunikation.",
+    "confidence": "high",
+    "sourceUrl": "https://thedistriqt.com/about"
+  },
+  {
+    "id": 130,
+    "name": "Integrity Design",
+    "providedUrl": "integrity-design.de",
+    "domain": "integrity-design.de",
+    "location": "Hamburg, Deutschland",
+    "profile": "Integrity Design ist eine Hamburger Agentur für Markenstrategie, Branding, Corporate Design und Packaging Design. Das von Inken Cornelius, Nicole Fassold und Katja Wagner getragene Studio wird im Doc im Ethik/Gendergerechtigkeit-Kontext als weiblich besetzte Designagentur geführt.",
+    "confidence": "high",
+    "sourceUrl": "https://www.integrity-design.de/impressum"
+  },
+  {
+    "id": 131,
+    "name": "POLARWERK GmbH",
+    "providedUrl": "polarwerk.de/about-us",
+    "domain": "polarwerk.de",
+    "location": "Bremen, Deutschland",
+    "profile": "POLARWERK ist eine strategische Design- und Werbeagentur in Bremen für Identity, Branding, Finanz- und CSR-Kommunikation sowie Print und Editorial Design. Im Ethik/Gendergerechtigkeit-Kontext ist vor allem der CSR- und verantwortungsorientierte Kommunikationsfokus relevant.",
+    "confidence": "high",
+    "sourceUrl": "https://polarwerk.de/agentur/"
   }
 ];
