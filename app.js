@@ -126,7 +126,16 @@ const state = {
   shortlist: new Set(JSON.parse(localStorage.getItem("agencyShortlist") || "[]"))
 };
 
+const drawerDrag = {
+  pointerId: null,
+  startY: 0,
+  startTranslate: 0,
+  closedTranslate: 0,
+  hasMoved: false
+};
+
 const els = {
+  filters: document.querySelector(".filters"),
   appShell: document.querySelector(".app-shell"),
   searchInput: document.querySelector("#searchInput"),
   capabilityFilters: document.querySelector("#capabilityFilters"),
@@ -208,11 +217,79 @@ const saveShortlist = () => {
 
 const setMobileFiltersOpen = (isOpen) => {
   const open = Boolean(isOpen);
+  els.filters.classList.remove("dragging");
+  els.filters.style.transform = "";
+  els.filterScrim.style.opacity = "";
+  els.filterScrim.style.pointerEvents = "";
   document.body.classList.toggle("filters-open", open);
   els.openFilters.setAttribute("aria-expanded", String(open));
   els.peekFilters.setAttribute("aria-expanded", String(open));
   els.peekFilters.textContent = open ? "Close Filter" : "Open Filter";
   els.filterScrim.hidden = !open;
+};
+
+const isMobileFiltersLayout = () => window.matchMedia("(max-width: 980px)").matches;
+
+const getClosedDrawerTranslate = () => Math.max(0, els.filters.getBoundingClientRect().height - 34);
+
+const setDrawerDragTranslate = (translateY) => {
+  const progress = drawerDrag.closedTranslate
+    ? Math.max(0, Math.min(1, 1 - (translateY / drawerDrag.closedTranslate)))
+    : 0;
+  els.filters.style.transform = `translateY(${translateY}px)`;
+  els.filterScrim.hidden = false;
+  els.filterScrim.style.opacity = String(progress);
+  els.filterScrim.style.pointerEvents = progress > 0.05 ? "auto" : "none";
+};
+
+const startDrawerDrag = (event) => {
+  if (!isMobileFiltersLayout() || event.pointerType === "mouse") return;
+  drawerDrag.pointerId = event.pointerId;
+  drawerDrag.startY = event.clientY;
+  drawerDrag.closedTranslate = getClosedDrawerTranslate();
+  drawerDrag.startTranslate = document.body.classList.contains("filters-open")
+    ? 0
+    : drawerDrag.closedTranslate;
+  drawerDrag.hasMoved = false;
+  els.filters.classList.add("dragging");
+  els.peekFilters.setPointerCapture(event.pointerId);
+};
+
+const moveDrawerDrag = (event) => {
+  if (drawerDrag.pointerId !== event.pointerId) return;
+  const deltaY = event.clientY - drawerDrag.startY;
+  if (Math.abs(deltaY) > 4) drawerDrag.hasMoved = true;
+  if (!drawerDrag.hasMoved) return;
+  event.preventDefault();
+  const nextTranslate = Math.max(0, Math.min(
+    drawerDrag.closedTranslate,
+    drawerDrag.startTranslate + deltaY
+  ));
+  setDrawerDragTranslate(nextTranslate);
+};
+
+const endDrawerDrag = (event) => {
+  if (drawerDrag.pointerId !== event.pointerId) return;
+  const deltaY = event.clientY - drawerDrag.startY;
+  const currentTranslate = Math.max(0, Math.min(
+    drawerDrag.closedTranslate,
+    drawerDrag.startTranslate + deltaY
+  ));
+  const shouldOpen = drawerDrag.hasMoved
+    ? currentTranslate < drawerDrag.closedTranslate * 0.62
+    : document.body.classList.contains("filters-open");
+
+  if (els.peekFilters.hasPointerCapture(event.pointerId)) {
+    els.peekFilters.releasePointerCapture(event.pointerId);
+  }
+
+  drawerDrag.pointerId = null;
+  if (drawerDrag.hasMoved) {
+    event.preventDefault();
+    setMobileFiltersOpen(shouldOpen);
+  } else {
+    els.filters.classList.remove("dragging");
+  }
 };
 
 const setUploadStatus = (message, tone = "") => {
@@ -599,7 +676,17 @@ const init = async () => {
   els.uploadDataButton.addEventListener("click", () => els.uploadDataInput.click());
   els.uploadDataInput.addEventListener("change", (event) => uploadAgencyFile(event.target.files?.[0]));
   els.openFilters.addEventListener("click", () => setMobileFiltersOpen(true));
-  els.peekFilters.addEventListener("click", () => setMobileFiltersOpen(!document.body.classList.contains("filters-open")));
+  els.peekFilters.addEventListener("pointerdown", startDrawerDrag);
+  els.peekFilters.addEventListener("pointermove", moveDrawerDrag);
+  els.peekFilters.addEventListener("pointerup", endDrawerDrag);
+  els.peekFilters.addEventListener("pointercancel", endDrawerDrag);
+  els.peekFilters.addEventListener("click", () => {
+    if (drawerDrag.hasMoved) {
+      drawerDrag.hasMoved = false;
+      return;
+    }
+    setMobileFiltersOpen(!document.body.classList.contains("filters-open"));
+  });
   els.filterScrim.addEventListener("click", () => setMobileFiltersOpen(false));
   window.addEventListener("keydown", (event) => {
     if (event.key === "Escape") setMobileFiltersOpen(false);

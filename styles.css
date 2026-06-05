@@ -1488,6 +1488,10 @@ body {
     transition: opacity 180ms ease, transform 180ms ease;
   }
 
+  .filters.dragging {
+    transition: none;
+  }
+
   body.filters-open .filters {
     opacity: 1;
     pointer-events: auto;
@@ -1535,9 +1539,9 @@ body {
     display: inline-flex;
     align-items: center;
     margin: 4px 1px;
-    color: #5d5a66;
-    font-size: 14px;
-    font-weight: 850;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 11px;
+    font-weight: 750;
     line-height: 1.35;
     pointer-events: none;
     user-select: none;
@@ -1623,6 +1627,8 @@ body {
     font-weight: 850;
     text-align: center;
     text-transform: uppercase;
+    touch-action: none;
+    user-select: none;
   }
 
   .mobile-filter-title::before {
