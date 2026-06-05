@@ -677,5 +677,229 @@
     "url": "https://graphic-group.de/impressum/",
     "previewImage": "previews/099-graphic-group-de.jpg",
     "status": "captured"
+  },
+  {
+    "id": 100,
+    "name": "TNL / The Night Lab",
+    "url": "https://www.tnl.de/ueber-uns/team/",
+    "previewImage": "previews/100-tnl-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 101,
+    "name": "Neo Motion Studio",
+    "url": "https://www.neomotion.studio/en/home/",
+    "previewImage": "previews/101-neomotion-studio.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 102,
+    "name": "Fabian&Fred",
+    "url": "https://www.fabianfred.com/",
+    "previewImage": "previews/102-fabianfred-com.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 103,
+    "name": "Frieda-Werkstattladen",
+    "url": "https://www.frieda-werkstattladen.de/kontakt/",
+    "previewImage": "previews/103-frieda-werkstattladen-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 104,
+    "name": "Tiny Giants",
+    "url": "https://www.tinygiants.nl/studio",
+    "previewImage": "previews/104-tinygiants-nl.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 105,
+    "name": "LAB BINÆR",
+    "url": "https://labbinaer.de/",
+    "previewImage": "previews/105-labbinaer-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 106,
+    "name": "Studio Louter",
+    "url": "https://www.studiolouter.nl/",
+    "previewImage": "previews/106-studiolouter-nl.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 107,
+    "name": "NewFormat",
+    "url": "https://newformat.io/about",
+    "previewImage": "previews/107-newformat-io.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 108,
+    "name": "The Hidden Institute",
+    "url": "https://www.thehiddeninstitute.com/about",
+    "previewImage": "previews/108-thehiddeninstitute-com.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 109,
+    "name": "2RAW GmbH",
+    "url": "https://2raw.de/en/about",
+    "previewImage": "previews/109-2raw-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 110,
+    "name": "HighPassionStudios",
+    "url": "https://highpassionstudios.com/",
+    "previewImage": "previews/110-highpassionstudios-com.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 111,
+    "name": "networker Medienfabrik GmbH",
+    "url": "https://www.bielefeld.de/node/4568",
+    "previewImage": "previews/111-networker-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 112,
+    "name": "Kanal 21",
+    "url": "https://www.kanal-21.de/",
+    "previewImage": "previews/112-kanal-21-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 113,
+    "name": "TwoPoints.Net",
+    "url": "https://new.twopoints.net/info/",
+    "previewImage": "previews/113-twopoints-net.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 114,
+    "name": "Atelier Heiner Meyer",
+    "url": "https://heiner-meyer.com/",
+    "previewImage": "previews/114-heiner-meyer-com.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 115,
+    "name": "Trauergestalt",
+    "url": "https://trauergestalt.de/",
+    "previewImage": "previews/115-trauergestalt-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 116,
+    "name": "Rewire",
+    "url": "https://www.rewirefestival.nl/about_contact",
+    "previewImage": "previews/116-rewirefestival-nl.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 117,
+    "name": "Cheers for Fears",
+    "url": "https://cheersforfears.de/kategorie/open-calls/",
+    "previewImage": "previews/117-cheersforfears-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 118,
+    "name": "Hall of Bricks",
+    "url": "https://hallofbricks.shop/pages/faqs-kontakt",
+    "previewImage": "previews/118-hallofbricks-shop.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 119,
+    "name": "1→10, Inc.",
+    "url": "https://www.1-10.com/en/",
+    "previewImage": "previews/119-1-10-com.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 120,
+    "name": "JKD Collective Inc.",
+    "url": "https://jkdcollective.jp/en/about/",
+    "previewImage": "previews/120-jkdcollective-jp.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 121,
+    "name": "studiokwi",
+    "url": "https://studiokwi.de/about/",
+    "previewImage": "previews/121-studiokwi-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 122,
+    "name": "Helder",
+    "url": "https://helder.design/marken/emanzipation-als-brand-purpose",
+    "previewImage": "previews/122-helder-design.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 123,
+    "name": "Studio Pandan",
+    "url": "https://pandan.co/en/info/",
+    "previewImage": "previews/123-pandan-co.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 124,
+    "name": "Missy Magazine",
+    "url": "https://missy-magazine.de/ueber-missy/",
+    "previewImage": "previews/124-missy-magazine-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 125,
+    "name": "NEW STANDARD.S",
+    "url": "https://newstandard.studio/",
+    "previewImage": "previews/125-newstandard-studio.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 126,
+    "name": "Modem Studio",
+    "url": "https://www.modem.studio/about/",
+    "previewImage": "previews/126-modem-studio.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 127,
+    "name": "IN-VISIBLE Berlin",
+    "url": "https://www.in-visible.berlin/",
+    "previewImage": "previews/127-in-visible-berlin.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 128,
+    "name": "Rimini Berlin",
+    "url": "https://www.rimini-berlin.de/en/about",
+    "previewImage": "previews/128-rimini-berlin-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 129,
+    "name": "THE DISTRIQT",
+    "url": "https://thedistriqt.com/about",
+    "previewImage": "previews/129-thedistriqt-com.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 130,
+    "name": "Integrity Design",
+    "url": "https://www.integrity-design.de/impressum",
+    "previewImage": "previews/130-integrity-design-de.jpg",
+    "status": "captured"
+  },
+  {
+    "id": 131,
+    "name": "POLARWERK GmbH",
+    "url": "https://polarwerk.de/agentur/",
+    "previewImage": "previews/131-polarwerk-de.jpg",
+    "status": "captured"
   }
 ]
