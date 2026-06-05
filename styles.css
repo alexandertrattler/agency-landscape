@@ -1516,16 +1516,19 @@ body {
   }
 
   .filters .chip.active {
-    color: #bebcff;
+    color: #a855ff;
     background: transparent;
     border-color: transparent;
+    text-decoration-color: #a855ff;
+    text-shadow: 0 0 16px rgba(168, 85, 255, 0.62);
   }
 
   .filters .chip:not(:last-child)::after {
-    content: "·";
-    margin-left: 9px;
-    color: rgba(255, 255, 255, 0.28);
+    content: "/";
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.34);
     text-decoration: none;
+    text-shadow: none;
   }
 
   .filters .chip-count {
@@ -1553,7 +1556,9 @@ body {
   }
 
   .drawer-text-filter.active {
-    color: #bebcff;
+    color: #a855ff;
+    text-decoration-color: #a855ff;
+    text-shadow: 0 0 16px rgba(168, 85, 255, 0.62);
   }
 
   .chip-grid {
@@ -1587,10 +1592,9 @@ body {
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
+    justify-content: center;
     margin: -12px -14px 12px;
-    padding: 12px 14px 10px;
+    padding: 9px 14px 10px;
     background:
       linear-gradient(145deg, rgba(124, 121, 255, 0.14), transparent 42%),
       #17161c;
@@ -1598,17 +1602,31 @@ body {
   }
 
   .mobile-filter-title {
+    width: 100%;
     padding: 0;
     color: #ffffff;
     background: transparent;
     border: 0;
     font-size: 12px;
     font-weight: 850;
+    text-align: center;
     text-transform: uppercase;
+  }
+
+  .mobile-filter-title::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    margin: 0 auto 7px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 99px;
   }
 
   .filters section {
     margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.13);
   }
 
   .search input {

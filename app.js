@@ -141,7 +141,6 @@ const els = {
   mobileEthicsFilter: document.querySelector("#mobileEthicsFilter"),
   openFilters: document.querySelector("#openFilters"),
   peekFilters: document.querySelector("#peekFilters"),
-  closeFilters: document.querySelector("#closeFilters"),
   filterScrim: document.querySelector("#filterScrim"),
   sortOptions: document.querySelectorAll("[data-sort]"),
   filterResizeHandle: document.querySelector("#filterResizeHandle"),
@@ -208,9 +207,12 @@ const saveShortlist = () => {
 };
 
 const setMobileFiltersOpen = (isOpen) => {
-  document.body.classList.toggle("filters-open", isOpen);
-  els.openFilters.setAttribute("aria-expanded", String(isOpen));
-  els.filterScrim.hidden = !isOpen;
+  const open = Boolean(isOpen);
+  document.body.classList.toggle("filters-open", open);
+  els.openFilters.setAttribute("aria-expanded", String(open));
+  els.peekFilters.setAttribute("aria-expanded", String(open));
+  els.peekFilters.textContent = open ? "Close" : "Open";
+  els.filterScrim.hidden = !open;
 };
 
 const setUploadStatus = (message, tone = "") => {
@@ -596,8 +598,7 @@ const init = async () => {
   els.uploadDataButton.addEventListener("click", () => els.uploadDataInput.click());
   els.uploadDataInput.addEventListener("change", (event) => uploadAgencyFile(event.target.files?.[0]));
   els.openFilters.addEventListener("click", () => setMobileFiltersOpen(true));
-  els.peekFilters.addEventListener("click", () => setMobileFiltersOpen(true));
-  els.closeFilters.addEventListener("click", () => setMobileFiltersOpen(false));
+  els.peekFilters.addEventListener("click", () => setMobileFiltersOpen(!document.body.classList.contains("filters-open")));
   els.filterScrim.addEventListener("click", () => setMobileFiltersOpen(false));
   window.addEventListener("keydown", (event) => {
     if (event.key === "Escape") setMobileFiltersOpen(false);
