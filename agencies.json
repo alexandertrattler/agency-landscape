@@ -1117,7 +1117,10 @@
     "location": "Bielefeld, Deutschland",
     "profile": "Kanal 21 ist ein Bielefelder Medienprojektzentrum mit Angeboten rund um Partizipation, Medienkompetenz, Praktika und Ausbildung. Die gemeinnützige GmbH bietet außerdem Videoproduktion, Livestreaming, Animation/Compositing und Eventaufzeichnungen an.",
     "confidence": "high",
-    "sourceUrl": "https://www.kanal-21.de/"
+    "sourceUrl": "https://www.kanal-21.de/",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 113,
@@ -1147,7 +1150,10 @@
     "location": "Bielefeld, Deutschland",
     "profile": "Trauergestalt entwickelt gestalterische Produkte und Angebote für Trauerkultur, darunter individuelle Trauerkarten, Gedenkstücke und Begleitung für Trauerfeiern. Das Projekt verbindet Kommunikationsdesign, sensiblen Service und soziale Gestaltung.",
     "confidence": "high",
-    "sourceUrl": "https://trauergestalt.de/"
+    "sourceUrl": "https://trauergestalt.de/",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 116,
@@ -1157,7 +1163,10 @@
     "location": "Den Haag, Niederlande",
     "profile": "Rewire ist eine gemeinnützige Organisation und ein jährliches internationales Festival für abenteuerliche Musik in Den Haag. Neben dem Festival organisiert Rewire ganzjährig Konzerte, Bildungsprogramme und soundbezogene Kulturformate.",
     "confidence": "high",
-    "sourceUrl": "https://www.rewirefestival.nl/about_contact"
+    "sourceUrl": "https://www.rewirefestival.nl/about_contact",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 117,
@@ -1167,7 +1176,10 @@
     "location": "Mülheim an der Ruhr, Deutschland",
     "profile": "Cheers for Fears ist eine Plattform und Initiative für die junge freie Szene der darstellenden Künste in NRW. Die Website zeigt Open Calls, Festivals, Akademien und Produktionsplattformen statt klassischer Agenturleistungen.",
     "confidence": "medium",
-    "sourceUrl": "https://cheersforfears.de/kategorie/open-calls/"
+    "sourceUrl": "https://cheersforfears.de/kategorie/open-calls/",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 118,
@@ -1207,7 +1219,10 @@
     "location": "Berlin, Deutschland",
     "profile": "studiokwi ist ein Berliner Designstudio für intersektionales, diskriminierungssensibles und barrierebewusstes Design. Das Studio arbeitet mit diversen Kund*innen und einem Netzwerk an visuellen Identitäten, Webdesign, Editorial, Print, Workshops und gendersensibler Kommunikation.",
     "confidence": "high",
-    "sourceUrl": "https://studiokwi.de/about/"
+    "sourceUrl": "https://studiokwi.de/about/",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 122,
@@ -1217,7 +1232,10 @@
     "location": "Berlin, Deutschland",
     "profile": "Helder ist eine Berliner Branding-Agentur für Markenstrategie, Brand Design und Storytelling. Im Ethik/Gendergerechtigkeit-Kontext ist Helder relevant, weil die Agentur Brand Purpose, Werte, Community Brands und Diversität als strategische Markenthemen sichtbar macht.",
     "confidence": "high",
-    "sourceUrl": "https://helder.design/marken/emanzipation-als-brand-purpose"
+    "sourceUrl": "https://helder.design/marken/emanzipation-als-brand-purpose",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 123,
@@ -1227,7 +1245,10 @@
     "location": "Berlin, Deutschland",
     "profile": "Studio Pandan ist ein Berliner Designstudio für visuelle Identitäten, Publikationen, Websites und kulturelle Projekte. Das von Ann Richter und Pia Christmann gegründete Studio arbeitet stark typografisch, kulturbezogen und wird im Doc als weiblich geführtes Team im Ethik/Gendergerechtigkeit-Kontext geführt.",
     "confidence": "high",
-    "sourceUrl": "https://pandan.co/en/info/"
+    "sourceUrl": "https://pandan.co/en/info/",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 124,
@@ -1237,7 +1258,10 @@
     "location": "Berlin, Deutschland",
     "profile": "Missy Magazine ist ein unabhängiges feministisches Magazin für Pop, Politik und intersektionalen Feminismus. Das Missyverse umfasst Print, Online, Podcast, Social-Formate, Newsletter und einen feministischen Kalender mit Fokus auf FLINTA- und BIPoC-Perspektiven.",
     "confidence": "high",
-    "sourceUrl": "https://missy-magazine.de/ueber-missy/"
+    "sourceUrl": "https://missy-magazine.de/ueber-missy/",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 125,
@@ -1247,7 +1271,10 @@
     "location": "Berlin, Deutschland",
     "profile": "NEW STANDARD.S ist eine Berliner Nachhaltigkeitsberatung und ein Creative Studio für Circular Economy. Das Studio verbindet Strategie, Umsetzung und Kommunikation, um Nachhaltigkeit, Circularity und glaubwürdige Kampagnen ohne Greenwashing zu entwickeln.",
     "confidence": "high",
-    "sourceUrl": "https://newstandard.studio/"
+    "sourceUrl": "https://newstandard.studio/",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 126,
@@ -1257,7 +1284,10 @@
     "location": "Berlin, Deutschland",
     "profile": "Modem Studio ist ein Berliner Grafikdesign-Studio für kulturelle und kommerzielle Institutionen sowie private Kund*innen. Im Doc wird es im Ethik/Gendergerechtigkeit-Kontext geführt, unter anderem wegen Bezügen zu District Berlin und kulturbezogener Gestaltung.",
     "confidence": "medium",
-    "sourceUrl": "https://www.modem.studio/about/"
+    "sourceUrl": "https://www.modem.studio/about/",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 127,
@@ -1267,7 +1297,10 @@
     "location": "Berlin, Deutschland",
     "profile": "IN-VISIBLE Berlin ist eine Agentur für Gender, Diversity und Transformation. Das Team entwickelt menschenzentrierte Diversity-Strategien, Beratung und Workshops zu Gendergerechtigkeit, Bias, Inklusion und DEI-Prozessen.",
     "confidence": "high",
-    "sourceUrl": "https://www.in-visible.berlin/"
+    "sourceUrl": "https://www.in-visible.berlin/",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 128,
@@ -1277,7 +1310,10 @@
     "location": "Berlin, Deutschland",
     "profile": "Rimini Berlin ist ein Designstudio für gedruckte, digitale, filmische und räumliche Projekte im Kultur- und Wissenschaftsbereich. Im Doc wird Rimini im Ethik/Gendergerechtigkeit-Kontext geführt; das Studio arbeitet konzeptuell und experimentell mit Institutionen, Künstler*innen, Verlagen und Museen.",
     "confidence": "high",
-    "sourceUrl": "https://www.rimini-berlin.de/en/about"
+    "sourceUrl": "https://www.rimini-berlin.de/en/about",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 129,
@@ -1287,7 +1323,10 @@
     "location": "Hamburg, Deutschland",
     "profile": "THE DISTRIQT ist ein feministisches Publishing House und eine Creative Agency für Edutainment, Content, Events und Produkte. Das Team fragt explizit nach nachhaltigeren, inklusiveren, diverseren und gerechteren Formen von Kommunikation.",
     "confidence": "high",
-    "sourceUrl": "https://thedistriqt.com/about"
+    "sourceUrl": "https://thedistriqt.com/about",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 130,
@@ -1297,7 +1336,10 @@
     "location": "Hamburg, Deutschland",
     "profile": "Integrity Design ist eine Hamburger Agentur für Markenstrategie, Branding, Corporate Design und Packaging Design. Das von Inken Cornelius, Nicole Fassold und Katja Wagner getragene Studio wird im Doc im Ethik/Gendergerechtigkeit-Kontext als weiblich besetzte Designagentur geführt.",
     "confidence": "high",
-    "sourceUrl": "https://www.integrity-design.de/impressum"
+    "sourceUrl": "https://www.integrity-design.de/impressum",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   },
   {
     "id": 131,
@@ -1307,6 +1349,9 @@
     "location": "Bremen, Deutschland",
     "profile": "POLARWERK ist eine strategische Design- und Werbeagentur in Bremen für Identity, Branding, Finanz- und CSR-Kommunikation sowie Print und Editorial Design. Im Ethik/Gendergerechtigkeit-Kontext ist vor allem der CSR- und verantwortungsorientierte Kommunikationsfokus relevant.",
     "confidence": "high",
-    "sourceUrl": "https://polarwerk.de/agentur/"
+    "sourceUrl": "https://polarwerk.de/agentur/",
+    "categories": [
+      "Ethik/Gendergerechtigkeit"
+    ]
   }
 ]

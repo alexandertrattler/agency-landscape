@@ -10,37 +10,8 @@ const capabilityDefs = [
   ["Art/Culture", ["kunst", "kultur", "festival", "museum", "media art", "medienkunst", "public art"]]
 ];
 
-const ethicsKeywords = [
-  "ethik",
-  "gender",
-  "gerechtigkeit",
-  "gendergerechtigkeit",
-  "feminismus",
-  "feministisch",
-  "flinta",
-  "divers",
-  "diversität",
-  "diversitaet",
-  "inklusion",
-  "inklusiv",
-  "diskriminierung",
-  "diskriminierungssensibel",
-  "nachhaltigkeit",
-  "sustainability",
-  "soziales",
-  "sozial",
-  "partizipation",
-  "teilhabe",
-  "gemeinnützig",
-  "gemeinnuetzig",
-  "non-profit",
-  "community",
-  "awareness"
-];
+const ethicsCategory = "Ethik/Gendergerechtigkeit";
 
-const ethicsPhrases = [
-  "freie szene"
-];
 
 const cityDefs = [
   ["berlin", "Berlin", ["berlin"]],
@@ -276,9 +247,7 @@ const matchesCityFilters = (agency) => state.cityFilters.size === 0 ||
 
 const matchesEthicsFilter = (agency) => {
   if (!state.ethicsOnly) return true;
-  const text = searchableText(agency);
-  return ethicsKeywords.some((keyword) => text.includes(normalize(keyword))) ||
-    ethicsPhrases.some((phrase) => text.includes(normalize(phrase)));
+  return (agency.categories || []).includes(ethicsCategory);
 };
 
 const matchesShortlistFilter = (agency) => !state.shortlistOnly || state.shortlist.has(agency.id);
@@ -349,6 +318,7 @@ const searchableText = (agency) => normalize([
   agency.profile,
   agency.sourceUrl,
   agency.confidence,
+  (agency.categories || []).join(" "),
   agency.capabilities.join(" "),
   agency.countries.join(" "),
   agency.cities.join(" ")
